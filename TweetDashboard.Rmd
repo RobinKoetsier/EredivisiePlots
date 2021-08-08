@@ -1,0 +1,37 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+First fill in the url's
+```{r}
+urls <- c("https://www.whoscored.com/Matches/1469877/Live/Netherlands-Eredivisie-2020-2021-PSV-Eindhoven-PEC-Zwolle",
+          "https://www.whoscored.com/Matches/1469883/Live/Netherlands-Eredivisie-2020-2021-AZ-Alkmaar-Heracles",
+          "https://www.whoscored.com/Matches/1469730/Live/Netherlands-Eredivisie-2020-2021-VVV-Venlo-Ajax",
+          "https://www.whoscored.com/Matches/1469748/Live/Netherlands-Eredivisie-2020-2021-Fortuna-Sittard-PEC-Zwolle")
+```
+
+Scrape, process and tweet data.
+
+```{r}
+i <- 4
+for(i in 1: length(urls)){
+#for(i in 4: 4){
+  url <- urls[i]
+OneGame <- Scrape(url)
+Wedstrijd <- Predict(OneGame)
+MakePartsPatchwork(Wedstrijd)
+#TweetTweet(Wedstrijd,1)
+}
+```
+FIRST KNIT YOUR REACTABLE MARKDOWN!!!!!!
+
+
+```{r}
+
+
+webshot(url = "test.html", file = "graphs/xRank.png", delay = 0.1, vwidth = 1000, zoom = 3)
+TweetTweet(Wedstrijd,2)
+```
+
+
