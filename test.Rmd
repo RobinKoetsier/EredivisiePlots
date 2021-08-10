@@ -1,5 +1,5 @@
 ---
-title: "Women's World Cup Predictions"
+title: "Expected Rank Eredivisie"
 output:
   html_document: default
   pdf_document: default
