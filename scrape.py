@@ -25,7 +25,7 @@ import os
 
 
 urls=[]
-for i in range(106,114):  
+for i in range(100,105):  
 
      temp_url='https://www.whoscored.com/Matches/15460'+str(i)+'/Live/Netherlands-Eredivisie-2019-2020'
      urls.append(temp_url)
