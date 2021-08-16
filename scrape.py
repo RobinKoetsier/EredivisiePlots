@@ -62,7 +62,7 @@ for funt in range(len(urls)):
     driver = webdriver.Chrome(options=options)
     driver.get(urls[funt])
     time.sleep(2.4)
-    print(url)
+    print(urls[funt])
     soup_level1=BeautifulSoup(driver.page_source, 'lxml')
     driver.close()
     print('Fetching details of match...........')
