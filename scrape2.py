@@ -54,11 +54,11 @@ urls.append(temp_url)
 for funt in range(len(urls)):
 	
     print('processing..........')
-    options = Options()
+    #options = Options()
     #options.add_argument("--headless")
     #options.add_argument("window-size=1400,1500")
 
-    driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome()
     driver.get(urls[funt])
     time.sleep(2.4)
     soup_level1=BeautifulSoup(driver.page_source, 'lxml')
