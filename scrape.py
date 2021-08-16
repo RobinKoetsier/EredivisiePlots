@@ -53,7 +53,11 @@ for i in range(106,114):
 for funt in range(len(urls)):
 	
     print('processing..........')
-    driver = webdriver.Chrome()
+    options = Options()
+    options.add_argument("--headless")
+    options.add_argument("window-size=1400,1500")
+
+    driver = webdriver.Chrome(options=options)
     driver.get(urls[funt])
     time.sleep(2.4)
     soup_level1=BeautifulSoup(driver.page_source, 'lxml')
