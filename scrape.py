@@ -25,14 +25,14 @@ import os
 
 
 urls=[]
-for i in range(100,105):  
+#for i in range(100,105):  
 
-     temp_url='https://www.whoscored.com/Matches/15460'+str(i)+'/Live/Netherlands-Eredivisie-2019-2020'
-     urls.append(temp_url)
+#     temp_url='https://www.whoscored.com/Matches/15460'+str(i)+'/Live/Netherlands-Eredivisie-2019-2020'
+#     urls.append(temp_url)
 
 
-# temp_url='https://www.whoscored.com/Matches/1469829/Live/Netherlands-Eredivisie-2019-2020'
-# urls.append(temp_url)
+temp_url='https://www.whoscored.com/Matches/1469829/Live/Netherlands-Eredivisie-2019-2020'
+urls.append(temp_url)
 # temp_url='https://www.whoscored.com/Matches/1469830/Live/Netherlands-Eredivisie-2019-2020'
 # urls.append(temp_url)
 # temp_url='https://www.whoscored.com/Matches/1469831/Live/Netherlands-Eredivisie-2019-2020'
