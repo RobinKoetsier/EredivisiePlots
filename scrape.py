@@ -58,7 +58,9 @@ for funt in range(len(urls)):
     options.add_argument("headless")
     #options.add_argument("window-size=1400,1500")
     #options.add_argument("disable-gpu")
-    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36")
+    #options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36")
+    userAgent = ua.random
+    options.add_argument(f"user-agent={userAgent}")
     driver = webdriver.Chrome(options=options)
     driver.get(urls[funt])
     time.sleep(2.4)
