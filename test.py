@@ -6,3 +6,4 @@ driver = webdriver.Chrome(options=options)
 driver.get("https://www.youtube.com/")
 element_text = driver.find_element_by_id("title").text
 print(element_text)
+print("test")
