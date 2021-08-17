@@ -69,7 +69,7 @@ for funt in range(len(urls)):
     false='false'
     true='true'
     #print(soup_level1)
-    krokuch=soup_level1.text.split('{"playerIdNameDictionary":{')[1]
+    krokuch=soup_level1.split('{"playerIdNameDictionary":{')[1]
     milakuch=krokuch.split('commonEvents')[1]
     haukuch=milakuch.split('PostGame')
     dddd=(haukuch[0]+'PostGame'+(haukuch[1])+'PostGame"'+'}')
