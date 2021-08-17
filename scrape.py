@@ -32,7 +32,7 @@ urls=[]
 #     urls.append(temp_url)
 
 
-temp_url='https://www.whoscored.com/Matches/1469829/Live/Netherlands-Eredivisie-2019-2020'
+temp_url='https://www.whoscored.com/Matches/1469830/Live/Netherlands-Eredivisie-2019-2020'
 urls.append(temp_url)
 # temp_url='https://www.whoscored.com/Matches/1469830/Live/Netherlands-Eredivisie-2019-2020'
 # urls.append(temp_url)
