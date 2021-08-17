@@ -10,6 +10,7 @@ import pandas as pd
 import time
 from datetime import datetime
 import numpy as np
+from fake_useragent import UserAgent
 
 
 # In[6]:
