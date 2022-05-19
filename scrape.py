@@ -2,7 +2,6 @@
 # coding: utf-8
 
 # In[5]:
-sudo scp -i /Users/robinkoetsier/Documents/ScraperWhoScored/Certs/ShinyNew.pem /Users/robinkoetsier/Documents/ScraperWhoScored/TDLXG/Teamcodes.Rda   ubuntu@ec2-3-21-239-38.us-east-2.compute.amazonaws.com:~/
 
 
 from selenium import webdriver
